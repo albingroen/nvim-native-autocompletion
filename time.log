@@ -1,0 +1,61 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.005  000.005: --- NVIM STARTING ---
+000.668  000.663: locale set
+001.153  000.484: inits 1
+001.168  000.015: window checked
+005.458  004.290: parsing arguments
+005.748  000.290: expanding arguments
+005.790  000.041: inits 2
+006.396  000.607: init highlight
+006.398  000.001: waiting for UI
+009.141  002.743: done waiting for UI
+009.160  000.019: init screen for UI
+009.191  000.031: init default mappings
+009.297  000.106: init default autocommands
+016.888  005.903  005.903: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/colors/tokyonight.vim
+033.894  024.376  018.473: sourcing /Users/albingroen/.config/nvim/init.lua
+033.920  000.247: sourcing vimrc file(s)
+038.608  004.566  004.566: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/filetype.vim
+038.771  000.034  000.034: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/ftplugin.vim
+038.914  000.028  000.028: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/indent.vim
+039.166  000.063  000.063: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/syntax/synload.vim
+039.228  000.245  000.183: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/syntax/syntax.vim
+040.665  000.127  000.127: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/gzip.vim
+040.719  000.012  000.012: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/health.vim
+040.797  000.038  000.038: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/man.vim
+041.507  000.138  000.138: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+041.639  000.802  000.664: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/matchit.vim
+041.807  000.127  000.127: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/matchparen.vim
+042.100  000.252  000.252: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/netrwPlugin.vim
+042.304  000.009  000.009: sourcing /Users/albingroen/.local/share/nvim/rplugin.vim
+042.309  000.159  000.150: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/rplugin.vim
+042.421  000.060  000.060: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/shada.vim
+042.488  000.020  000.020: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/spellfile.vim
+042.624  000.085  000.085: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/tarPlugin.vim
+042.741  000.068  000.068: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/tohtml.vim
+042.806  000.018  000.018: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/tutor.vim
+042.978  000.123  000.123: sourcing /opt/homebrew/Cellar/neovim/0.6.0/share/nvim/runtime/plugin/zipPlugin.vim
+043.625  000.491  000.491: sourcing /Users/albingroen/.config/nvim/plugin/packer_compiled.lua
+044.073  002.896: loading rtp plugins
+046.057  001.372  001.372: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/nvim-cmp/plugin/cmp.lua
+046.295  000.065  000.065: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/plugin/lspconfig.vim
+046.627  001.117: loading packages
+047.423  000.414  000.414: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/cmp-buffer/after/plugin/cmp_buffer.lua
+047.606  000.041  000.041: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after/plugin/cmp_nvim_lsp.lua
+047.932  000.189  000.189: sourcing /Users/albingroen/.local/share/nvim/site/pack/packer/start/cmp-path/after/plugin/cmp_path.lua
+047.934  000.665: loading after plugins
+047.942  000.008: inits 3
+052.846  004.904: reading ShaDa
+054.186  001.340: opening buffers
+054.207  000.021: BufEnter autocommands
+054.212  000.005: editing files in windows
+054.298  000.086: VimEnter autocommands
+054.299  000.001: UIEnter autocommands
+054.300  000.001: before starting main loop
+054.718  000.418: first screen update
+054.719  000.001: --- NVIM STARTED ---
