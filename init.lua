@@ -16,16 +16,27 @@ local cmp = require'cmp'
 cmp.setup({
   snippet = {
     expand = function(args)
+      require('luasnip').lsp_expand(args.body)
     end,
   },
   mapping = {
+    ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
     ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-    ['<tab>'] = cmp.mapping.select_next_item(),
     ['<S-tab>'] = cmp.mapping.select_prev_item(),
-    ['<CR>'] = cmp.mapping.confirm({ select = false }),
+    ['<tab>'] = cmp.mapping.select_next_item(),
+    ['<C-y>'] = cmp.config.disable,
+    ['<C-e>'] = cmp.mapping({
+      i = cmp.mapping.abort(),
+      c = cmp.mapping.close(),
+    }),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
   },
   sources = cmp.config.sources({
-    { name = 'nvim_lsp', max_item_count = 10, keyword_length = 3 },
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+  }, {
+    { name = 'buffer' },
   })
 })
 
@@ -39,10 +50,8 @@ local on_attach = function(client, bufnr)
 
   buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<space>.', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
 -- Setup lspconfig.
@@ -51,7 +60,7 @@ require('lspconfig').tsserver.setup {
   capabilities = capabilities,
   on_attach = on_attach,
   flags = {
-    debounce_text_changes = 150,
+    debounce_text_changes = 150
   }
 }
 
@@ -63,5 +72,7 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
 end)
 
